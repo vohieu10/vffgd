@@ -1,0 +1,62 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+    <style>
+      .el--1 {
+        background-color: blueviolet;
+      }
+      .el--2 {
+        background-color: orangered;
+      }
+      .el--3 {
+        background-color: green;
+        height: 150px;
+      }
+      .el--4 {
+        background-color: goldenrod;
+      }
+      .el--5 {
+        background-color: palevioletred;
+      }
+      .el--6 {
+        background-color: steelblue;
+      }
+
+      .grid-container {
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 30px;
+
+        background-color: #000;
+        width: 800px;
+        height: 700px;
+        /* grid */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        column-gap: 20px;
+        row-gap: 50px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="el el--1">1HTML</div>
+      <div class="el el--2">2and</div>
+      <div class="el el--3">3CSS</div>
+      <div class="el el--4">4are</div>
+      <div class="el el--5">5amazing</div>
+      <div class="el el--6">6languages</div>
+    </div>
+  </body>
+</html>
